@@ -1,0 +1,244 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: 'Roboto' ,sans-serif;
+    background-color: #ffffff;
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway' ,sans-serif;;
+    font-size: 26px;
+    line-height: 1.9;
+    color: inherit;
+    }
+ 
+.logo-web {
+    color: var(--accent-color);
+}
+
+ /* .logo-studio { 
+    color: var(--title-text-color);
+} */
+
+.logo-footer {
+    color: #ffffff
+}
+
+/* Стилизация навигации сайта */
+
+.site-nav,
+.site-nav a {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.info {
+    color: var(--primary-text-color);
+}
+
+.site-nav:hover,
+.site-nav:focus,
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* ---------Прячем заголовки-------------------------- */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*-------- Стилизация главной страницы сайта ----------*/
+
+.hero {
+    background-color: #2F303A;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-tittle {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.hero-button {
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    background: var(--accent-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+
+/*-------------------- Стилизация заголовка h2 -------------------*/
+
+.privilege,
+.about,
+.team h2 h1 {
+    color: #212121;
+}
+
+/*----------------- Стилизация заголовка р ------------------*/
+
+.privilege p,
+.about p,
+.team p {
+    color: var(--primary-text-color);
+}
+
+/*---------------------- Стилизация привилегии -----------------*/
+.privilege-tittle {
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.privilege p {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/*----------------- Стилизация чем мы занимаемся ------------------*/
+
+.about h2 {
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+
+/*---------------------- Стилизация блока команда --------------------*/
+
+.team {
+    background: #F5F4FA;
+}
+
+.team h2 {
+    font-size: 36px;
+    line-height: 1.7;
+}
+
+.team h3 {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team p {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/*------------------- Стилизация кнопок портфолио ---------------------*/
+.portfolio-button {
+    background: #F5F4FA;
+    color: var(--title-text-color);
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+/*------------------ Стилизация секции портфолио ---------------------*/
+
+.portfolio-list .list-about {
+    color: var(--primary-text-color);
+}
+
+.portfolio-list h3 {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.list-about {
+    font-size: 16px;
+    line-height: 1.88;
+}
+/*--------------------- Стилизация футера --------------------------*/
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-list .address{
+    color: #FFFFFF;
+}
+
+.footer-list .nav {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer:hover,
+.footer:focus,
+.footer-list .address:hover,
+.footer-list .address:focus,
+.footer-list .nav:hover,
+.footer-list .nav:focus {
+    color: var(--accent-color);
+}
+
+address {
+    font-style: normal;
+}
