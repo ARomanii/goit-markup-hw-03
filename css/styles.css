@@ -54,15 +54,13 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid red;
+    margin: 0 auto;
 }
 
 .link {
     text-decoration: none;
 }
 
-.list {
-    list-style: none;
-}
 
 .logo {
     font-family: 'Raleway' ,sans-serif;;
@@ -85,28 +83,68 @@ body {
 
 /* Стилизация навигации сайта */
 
-.site-nav,
-.site-nav a {
+.site-nav {
+    display: flex;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav .item  {
+    margin-right: 50px;
+} 
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
+.site-nav {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
 }
 
-.info {
-    color: var(--primary-text-color);
+.menu {
+    display: flex;
+    
 }
 
-.site-nav:hover,
-.site-nav:focus,
-.site-nav a:hover,
-.site-nav a:focus {
+.site-navv {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.site-navv:hover,
+.site-navv:focus {
+    color: var(--accent-color);
+}
+
+
+.info {
+    color: var(--primary-text-color);
+    display: flex;
+}
+
+.info+.info {
+    margin-left: 50px;
+}
+
+
+.site-nav .item:hover,
+.site-nav .item:focus{
     color: var(--accent-color);
 }
 
 .site-nav .link.current {
     color: var(--accent-color);
 }
+
 
 /* ---------Прячем заголовки-------------------------- */
 
@@ -122,14 +160,31 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+} 
+
+.visually-list {
+    display: flex;
 }
 
+.visually-list li {
+    width: 270px;
+}
+
+.visually-list .item {
+    margin-right: 30px;
+}
+
+.visually-list .item:nth-child(4n) {
+    margin-right: 0;
+}
 /*-------- Стилизация главной страницы сайта ----------*/
 
 .hero {
     background-color: #2F303A;
     color: #FFFFFF;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-tittle {
@@ -139,6 +194,8 @@ body {
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -177,9 +234,16 @@ body {
 }
 
 /*---------------------- Стилизация привилегии -----------------*/
+
+.privilege {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .privilege-tittle {
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 10px;
 }
 
 .privilege p {
@@ -189,26 +253,48 @@ body {
 
 /*----------------- Стилизация чем мы занимаемся ------------------*/
 
-.about h2 {
+.about {
+    padding-bottom: 94px;
+}
+
+.about-title {
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-list li {
+    margin-right: 30px;
 }
 
 
+.about-list li:nth-child(3n) {
+    margin-right: 0;
+}
 /*---------------------- Стилизация блока команда --------------------*/
 
 .team {
     background: #F5F4FA;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .team h2 {
     font-size: 36px;
     line-height: 1.7;
+    text-align: center;
 }
 
-.team h3 {
+.team-title {
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team p {
@@ -216,7 +302,27 @@ body {
     line-height: 1.19;
 }
 
+.team-list {
+    display: flex;
+}
+
+.team-list li {
+    margin-right: 30px;
+}
+
+.team-list li:nth-child(4n) {
+    margin-right: 0;
+}
 /*------------------- Стилизация кнопок портфолио ---------------------*/
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-list {
+    margin-top: 50px;
+}
+
 .portfolio-button {
     background: #F5F4FA;
     color: var(--title-text-color);
@@ -238,8 +344,21 @@ body {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    margin-top: 20px;
 }
 
+.portfolio-menu {
+    display: flex;
+    justify-content:center;
+}
+
+.portfolio-menu li {
+    margin-right: 8px;
+}
+
+.portfolio-menu li:nth-child(5n) {
+    margin-right: 0;
+}
 /*------------------ Стилизация секции портфолио ---------------------*/
 
 .portfolio-list .list-about {
@@ -256,10 +375,29 @@ body {
     font-size: 16px;
     line-height: 1.88;
 }
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list li {
+    margin-right: 30px;
+}
+
+.portfolio-list li:nth-child(3n) {
+    margin-right: 0;
+}
 /*--------------------- Стилизация футера --------------------------*/
 
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .logo.link {
+    margin-bottom: 20px;
 }
 
 .footer-list .address{
