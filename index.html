@@ -15,7 +15,7 @@
 <body>
        <header>
         <div class="container menu">
-            <nav>
+            <nav class="nav-navigation">
                 <!-- Навигация на другие страницы -->
                 <a class="logo link" href="./index.html">
                     <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
@@ -27,19 +27,23 @@
                 </ul>
             </nav>
             <!-- Почта  телефон -->
-            <a class="site-navv list link info" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="site-navv list link info" href="tel:+380961111111">+38 096 111 11 11</a>
+            <div class="nav-info">
+                <a class="site-navv list link info" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="site-navv list link info" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
         </div>
         </header>
 
     <main>
     <section class="hero">
+        <div class="container">
         <!-- Главный экран -->
         <h1 class="hero-tittle">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>
             ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
         <button class="hero-button" type="button">Заказать услугу</button>
+        </div>
     </section>
 
     <!-- наши преимущества -->
@@ -92,27 +96,35 @@
     <!-- Наша команда -->
     <section class="team">
         <div class="container">
-                <h2>Наша команда</h2>
+                <h2 class="container-title">Наша команда</h2>
                 <ul class="list team-list">
                     <li>
                         <img src="./images/productdesigner.jpg" alt="Фото дизайнера" width="270" height="260">
+                        <div class="command-title">
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p>Product Designer</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/frontenddeveloper.jpg" alt="Фото фронтенд-разработчика" width="270" height="260">
+                        <div class="command-title">
                         <h3 class="team-title">Ольга Репина</h3>
                         <p>Frontend Developer</p>
+                        </div>
                     </li>
                     <li>
                         <img src="./images/marketing.jpg" alt="Фото маркетолога" width="270" height="260">
+                        <div class="command-title">
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p>Marketing</p>
+                        </div>
                    </li>
                     <li>
                         <img src="./images/uldesigner.jpg" alt="Фото дзайнера пользовательского интерфейса" width="270" height="260">
+                        <div class="command-title">
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p>UI Designer</p>
+                        </div>
                     </li>
                 </ul>
         </div>
@@ -133,7 +145,7 @@
                             Леси
                             Украинки, 26</a>
                     </li>
-                    <li><a class="nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="footer-mailo"><a class="nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>

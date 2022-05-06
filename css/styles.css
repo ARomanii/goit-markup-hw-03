@@ -49,6 +49,7 @@ body {
     letter-spacing: 0.03em;
 }
 
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -67,6 +68,7 @@ body {
     font-size: 26px;
     line-height: 1.9;
     color: inherit;
+    margin-right: 93px;
     }
  
 .logo-web {
@@ -108,9 +110,20 @@ body {
     line-height: 1.14;
 }
 
+.nav-navigation {
+    display: flex;
+    align-items: center;
+}
+
 .menu {
     display: flex;
+    align-items: center;
     
+}
+
+.nav-info {
+    display: flex;
+    margin-left: auto;
 }
 
 .site-navv {
@@ -201,11 +214,10 @@ body {
 .hero-button {
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
+
     background: var(--accent-color);
     font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -278,6 +290,10 @@ body {
 }
 /*---------------------- Стилизация блока команда --------------------*/
 
+.container-title {
+    margin-bottom: 50px;
+}
+
 .team {
     background: #F5F4FA;
     padding-bottom: 94px;
@@ -291,9 +307,9 @@ body {
 }
 
 .team-title {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -308,9 +324,16 @@ body {
 
 .team-list li {
     margin-right: 30px;
+    background-color: #ffffff;
 }
 
-.team-list li:nth-child(4n) {
+.command-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-list li:last-child {
     margin-right: 0;
 }
 /*------------------- Стилизация кнопок портфолио ---------------------*/
@@ -321,10 +344,11 @@ body {
 
 .portfolio-list {
     margin-top: 50px;
+    background-color: #FFFFFF;
 }
 
 .portfolio-button {
-    background: #F5F4FA;
+    /* background: #F5F4FA; */
     color: var(--title-text-color);
     cursor: pointer;
 
@@ -332,12 +356,20 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+
+
+    width: 130px;
+    height: 38px;
+    left: 976px;
+    top: 174px;
+    border-radius: 4px;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
     background: var(--accent-color);
     color: #ffffff;
+    border-radius: 4px;
 }
 
 .portfolio-title {
@@ -356,8 +388,13 @@ body {
     margin-right: 8px;
 }
 
-.portfolio-menu li:nth-child(5n) {
+.portfolio-menu li:last-child {
     margin-right: 0;
+}
+
+.portfolio-about {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*------------------ Стилизация секции портфолио ---------------------*/
 
@@ -383,10 +420,15 @@ body {
 
 .portfolio-list li {
     margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .portfolio-list li:nth-child(3n) {
     margin-right: 0;
+}
+
+.portfolio-list li:nth-last-child(-n + 3) {
+    margin-bottom: 0;
 }
 /*--------------------- Стилизация футера --------------------------*/
 
@@ -424,4 +466,9 @@ body {
 
 address {
     font-style: normal;
+}
+
+.footer-mailo {
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
